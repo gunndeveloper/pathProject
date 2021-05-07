@@ -8,6 +8,18 @@ const Home= (props) => {
 
     return(
         <div className="home">
+            <table>
+            <tbody>
+            <tr>
+                <td width="600px">
+                <div id="robotDiv">
+                    <img src="/images/robot4.png" alt="logo" height="400px" width="350px"/>  
+                </div>
+                <div id="textDiv">
+                  <p class="bubble speech"><span class="change-content"></span></p>
+                </div>
+            </td>
+            <td align='center'>
             <div className="home__container">
             <div className="home__logo">
                 <img src="/images/pLogo1.svg" alt="logo" height="100px" width="400px"/>
@@ -23,9 +35,12 @@ const Home= (props) => {
                     <div class="search"></div>
                 </div>
             </form>
+            
             </div>
-        
-
+            </td>
+            </tr>
+            </tbody>
+            </table>
         </div>
 
     );

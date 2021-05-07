@@ -320,43 +320,64 @@ opacity: 0.5;
 font-weight: bolder;
 }
 
+#textDiv{
+  position: relative;
+  bottom: 380px;
+  left:90px
+}
 
+#robotDiv{
+  position: relative;
+  bottom: -130px;
+  left: 80px;
+}
 
-/* .App {
+p.bubble {
+  position: relative;
+  width: 300px;
   text-align: center;
+  line-height: 1.4em;
+  margin: 40px auto;
+  background-color: white;
+  border: 8px solid rgb(42,42,46);
+  border-radius: 30px;
+  font-family: sans-serif;
+  padding: 20px;
+  color:rgb(42,42,46);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p.bubble:before,
+p.bubble:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p.speech:before{
+  left: 30px;
+  bottom: -50px;
+  border: 25px solid;
+  border-color: rgb(42,42,46) transparent transparent rgb(42,42,46);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p.speech:after{
+  left:38px;
+  bottom: -30px;
+  border: 25px solid;
+  border-color: white transparent transparent white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.change-content:after{
+  content: '';
+  animation: changetext 10s infinite linear;
+  font-size: 1.1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+@keyframes changetext{
+  0%{content: "Welcome to Peraton!!";}
+  40%{content: "Click Blue button to Search.";}
+  100%{content: "You can also save your Search.";}
+}
